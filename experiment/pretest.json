@@ -2,37 +2,105 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary goal of customer churn prediction in a telecommunications company?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To increase network speed",
+        "b": "To identify customers likely to leave the service",
+        "c": "To reduce the cost of mobile devices",
+        "d": "To improve internet bandwidth"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Network speed improvement is not related to churn prediction.",
+        "b": "Customer churn prediction helps identify customers who may stop using the service.",
+        "c": "Device cost reduction is unrelated to churn prediction.",
+        "d": "Bandwidth improvement does not directly relate to predicting churn."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which type of machine learning problem is customer churn prediction?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Regression",
+        "b": "Classification",
+        "c": "Clustering",
+        "d": "Dimensionality Reduction"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Regression predicts continuous values, not class labels.",
+        "b": "Churn prediction classifies customers into churn or non-churn categories.",
+        "c": "Clustering groups similar data without predefined labels.",
+        "d": "Dimensionality reduction reduces the number of features."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which machine learning model represents decisions in a tree-like structure?",
+      "answers": {
+        "a": "Support Vector Machine",
+        "b": "Decision Tree",
+        "c": "Naive Bayes",
+        "d": "K-Means"
+      },
+      "explanations": {
+        "a": "SVM uses hyperplanes for classification.",
+        "b": "Decision Tree uses nodes and branches to represent decisions and outcomes.",
+        "c": "Naive Bayes is a probabilistic classifier.",
+        "d": "K-Means is used for clustering."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is data preprocessing important before training a machine learning model?",
+      "answers": {
+        "a": "To remove unnecessary algorithms",
+        "b": "To prepare data by handling missing values and encoding features",
+        "c": "To reduce the number of models used",
+        "d": "To increase the number of output classes"
+      },
+      "explanations": {
+        "a": "Algorithms are not removed during preprocessing.",
+        "b": "Preprocessing prepares the dataset by cleaning data and converting features into a usable format.",
+        "c": "The number of models used does not depend on preprocessing.",
+        "d": "Preprocessing does not change the number of classes."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of splitting a dataset into training and testing sets?",
+      "answers": {
+        "a": "To increase dataset size",
+        "b": "To train the model and evaluate its performance on unseen data",
+        "c": "To remove features from the dataset",
+        "d": "To reduce the number of records"
+      },
+      "explanations": {
+        "a": "Splitting does not increase the dataset size.",
+        "b": "Training data is used to build the model, and testing data evaluates its performance.",
+        "c": "Feature removal is not the purpose of dataset splitting.",
+        "d": "Splitting does not reduce records permanently."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which algorithm combines multiple decision trees to improve prediction performance?",
+      "answers": {
+        "a": "Random Forest",
+        "b": "Logistic Regression",
+        "c": "K-Nearest Neighbors",
+        "d": "Linear Regression"
+      },
+      "explanations": {
+        "a": "Random Forest is an ensemble method that builds multiple decision trees and combines their predictions.",
+        "b": "Logistic Regression is a linear classification algorithm.",
+        "c": "KNN predicts based on the nearest data points.",
+        "d": "Linear Regression predicts continuous values."
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
