@@ -3,9 +3,17 @@ Customer churn refers to the situation where customers stop using the services o
 
 Decision Tree and Random Forest are supervised machine learning algorithms commonly used for classification problems such as churn prediction. These algorithms learn patterns from historical customer data and make predictions for new customers based on their features.
 
+##### Target Variable
+
+In this churn prediction problem, the **target variable** is the outcome we want to predict:
+- **Target Variable:** `Churn`
+- **Output:** It answers **Yes** (if the customer is likely to leave) or **No** (if the customer is likely to stay).
+
+The model uses independent variables (features) like tenure, monthly charges, and contract type to predict this binary outcome.
+
 ##### Decision Tree
 
-A Decision Tree is a tree-structured model used for classification and regression tasks. It splits the dataset into smaller subsets based on feature values, forming a tree-like structure consisting of nodes and branches.
+A Decision Tree is a tree used for classification and regression tasks. It splits the dataset into smaller subsets based on feature values, forming a structure consisting of nodes and branches.
 
 The main components of a decision tree include:
 
@@ -18,7 +26,7 @@ Decision Trees use impurity measures to determine the best feature for splitting
 Common impurity measures include:
 
 - **Gini Impurity** – Measures how often a randomly chosen element would be incorrectly classified.
-- **Entropy** – Measures the randomness or uncertainty in the dataset.
+- **Entropy** – Measures the uncertainty or impurity of class labels in a node.
 
 Hyperparameters such as `max_depth`, `min_samples_split`, and `min_samples_leaf` control the structure of the tree and help prevent overfitting. Pruning techniques are also used to reduce unnecessary branches and improve model generalization.
 
@@ -29,7 +37,7 @@ Random Forest is an ensemble learning method that combines multiple Decision Tre
 Key concepts of Random Forest include:
 
 - **Multiple Decision Trees (Estimators)** – A large number of trees are trained using different subsets of data.
-- **Bootstrap Sampling** – Each tree is trained on a randomly selected subset of the dataset.
+- **Bootstrap Sampling** – Each tree is trained on a bootstrap sample (sampling with replacement) from the original dataset.
 - **Feature Randomness** – At each split, only a random subset of features is considered.
 - **Majority Voting** – The final prediction is determined by the majority vote of all trees.
 
@@ -47,3 +55,15 @@ Decision Trees are simple and easy to interpret, making them useful for understa
 Random Forest overcomes this limitation by combining multiple trees, which improves prediction accuracy and robustness. While Random Forest models are generally more accurate, they are less interpretable compared to a single Decision Tree.
 
 By training and comparing both models on telecom customer data, it becomes possible to evaluate which approach performs better for predicting customer churn and to understand how model parameters influence prediction performance.
+
+##### Evaluation Measures
+
+To evaluate the effectiveness of the models, the following measures are commonly used:
+
+- **Accuracy** – The percentage of total predictions that were correct.
+- **Confusion Matrix** – A table that summarizes the performance of the classification algorithm by showing the count of:
+  - **True Positives (TP):** Correctly predicted "Yes".
+  - **True Negatives (TN):** Correctly predicted "No".
+  - **False Positives (FP):** Incorrectly predicted "Yes".
+  - **False Negatives (FN):** Incorrectly predicted "No".
+- **Precision, Recall, and F1-Score** – Metrics used to measure the quality of predictions, especially when dealing with imbalanced churn data.
