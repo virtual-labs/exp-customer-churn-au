@@ -2,37 +2,105 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What does customer churn mean in a telecommunications company?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Customers upgrading their plan",
+        "b": "Customers stopping the use of the company's service",
+        "c": "Customers increasing their monthly usage",
+        "d": "Customers purchasing new devices"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Upgrading a plan is not considered churn.",
+        "b": "Customer churn refers to customers leaving or stopping the use of the telecom service.",
+        "c": "Increasing usage means the customer is still active.",
+        "d": "Purchasing devices does not indicate churn."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which machine learning algorithm builds a tree-like structure for classification decisions?",
+      "answers": {
+        "a": "Decision Tree",
+        "b": "Linear Regression",
+        "c": "K-Nearest Neighbors",
+        "d": "K-Means Clustering"
+      },
+      "explanations": {
+        "a": "Decision Tree uses a hierarchical tree structure with nodes and branches to make decisions.",
+        "b": "Linear Regression is used for predicting continuous values.",
+        "c": "KNN predicts based on nearest data points, not a tree structure.",
+        "d": "K-Means is an unsupervised clustering algorithm."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which impurity measure is commonly used in Decision Trees to determine the best split?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Accuracy Score",
+        "b": "R-squared",
+        "c": "Gini Impurity",
+        "d": "Mean Squared Error"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Accuracy is used for evaluation, not for splitting nodes.",
+        "b": "R-squared measures regression model performance.",
+        "c": "Gini impurity measures how mixed the classes are in a node and is used to find the best split.",
+        "d": "Mean Squared Error is mainly used in regression models."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the main advantage of Random Forest compared to a single Decision Tree?",
+      "answers": {
+        "a": "Uses only one tree for prediction",
+        "b": "Always requires less computation",
+        "c": "Does not require training data",
+        "d": "Combines multiple trees to improve prediction accuracy"
+      },
+      "explanations": {
+        "a": "Random Forest uses multiple trees, not a single tree.",
+        "b": "Random Forest can require more computation because it builds many trees.",
+        "c": "All machine learning models require training data.",
+        "d": "Random Forest improves accuracy and reduces overfitting by combining predictions from many trees."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which hyperparameter controls the maximum depth of a Decision Tree?",
+      "answers": {
+        "a": "max_depth",
+        "b": "n_estimators",
+        "c": "learning_rate",
+        "d": "batch_size"
+      },
+      "explanations": {
+        "a": "max_depth limits how deep the decision tree can grow.",
+        "b": "n_estimators is used in Random Forest to define the number of trees.",
+        "c": "learning_rate is commonly used in boosting algorithms.",
+        "d": "batch_size is used in neural network training."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the hyperparameter 'n_estimators' represent in Random Forest?",
+      "answers": {
+        "a": "Number of features in the dataset",
+        "b": "Number of training samples",
+        "c": "Number of classes in the dataset",
+        "d": "Number of trees in the forest"
+      },
+      "explanations": {
+        "a": "Features represent the attributes of the dataset.",
+        "b": "Training samples are the rows of the dataset.",
+        "c": "Classes represent the output categories.",
+        "d": "n_estimators specifies how many decision trees are created in the Random Forest."
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
