@@ -4,8 +4,7 @@
 <b>Discipline | <b>Computer Science and Engineering
 :--|:--|
 <b> Lab | <b> Introductory Data Science Lab
-<b> Experiment|     <b> Clustering wines using K-Means
-
+<b> Experiment|     <b> Telecom Customer Churn Prediction using Decision Tree & Random Forest
 
 ### About the Experiment 
 
